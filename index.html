@@ -1,14 +1,179 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects Portfolio</title>
+    <title>My Projects Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1220;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111c30;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #111c30, #123b59);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        .section {
+            padding: 60px 10%;
+        }
+
+        .section h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .project-card {
+            background: #172438;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #263d57;
+            max-width: 600px;
+        }
+
+        .project-card h3 {
+            color: #7dd3fc;
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #164e63;
+            color: #bae6fd;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111c30;
+            color: #94a3b8;
+        }
+
+        a {
+            color: #38bdf8;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to My Projects Portfolio!</h1>
-    <p>Building, Programming, and Exploring Robotics.</p>
-    <h2>My First Robotics Project</h2>
-    <p>ACEBOTT QD001 Robot Car</p>
+
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to My Projects Portfolio!</h1>
+        <p>Building, Programming, and Exploring Robotics.</p>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my project portfolio! I am passionate about
+            robotics, technology, programming, and engineering.
+            This website documents my learning journey, experiments,
+            and projects as I explore the world of robotics.
+        </p>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+            <h3>Project 01: ACEBOTT QD001 Robot Car</h3>
+
+            <p>
+                My first robotics platform. I will use this robot
+                to explore movement control, sensors, programming,
+                automation, and robotics applications.
+            </p>
+
+            <span class="tag">Robotics</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">Electronics</span>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Skills & Technologies</h2>
+        <p>
+            Robotics | Programming | Electronics |
+            Sensors | Automation
+        </p>
+        <p>More technologies will be added as I learn.</p>
+    </section>
+
+    <footer>
+        <p>My Projects Portfolio | Learning Through Building</p>
+    </footer>
+
 </body>
 </html>
