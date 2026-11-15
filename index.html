@@ -4,176 +4,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects Portfolio</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>My Robotics Lab | Projects Portfolio</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #0b1220;
-            color: #e5e7eb;
-            line-height: 1.6;
-        }
+    <meta name="description" content="My personal portfolio showcasing robotics, programming, electronics and engineering projects.">
 
-        header {
-            background: #111c30;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h2 {
-            color: #38bdf8;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(135deg, #111c30, #123b59);
-        }
-
-        .hero h1 {
-            font-size: 42px;
-            color: #38bdf8;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: #cbd5e1;
-        }
-
-        .section {
-            padding: 60px 10%;
-        }
-
-        .section h2 {
-            color: #38bdf8;
-            margin-bottom: 20px;
-        }
-
-        .project-card {
-            background: #172438;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #263d57;
-            max-width: 600px;
-        }
-
-        .project-card h3 {
-            color: #7dd3fc;
-            margin-bottom: 10px;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #164e63;
-            color: #bae6fd;
-            padding: 5px 12px;
-            border-radius: 20px;
-            margin-top: 12px;
-            font-size: 13px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #111c30;
-            color: #94a3b8;
-        }
-
-        a {
-            color: #38bdf8;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            nav a {
-                margin: 0 7px;
-                font-size: 14px;
-            }
-
-            .hero h1 {
-                font-size: 30px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h2>My Portfolio</h2>
+    <!-- NAVIGATION -->
+    <header class="header">
+        <a href="#home" class="logo">
+            <span class="logo-icon">⚙</span> MY ROBOTICS LAB
+        </a>
 
-        <nav>
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navbar" id="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
+
+    <!-- HERO SECTION -->
     <section class="hero" id="home">
-        <h1>Welcome to My Projects Portfolio!</h1>
-        <p>Building, Programming, and Exploring Robotics.</p>
-    </section>
 
-    <section class="section" id="about">
-        <h2>About Me</h2>
-        <p>
-            Welcome to my project portfolio! I am passionate about
-            robotics, technology, programming, and engineering.
-            This website documents my learning journey, experiments,
-            and projects as I explore the world of robotics.
-        </p>
-    </section>
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO MY ENGINEERING JOURNEY</p>
 
-    <section class="section" id="projects">
-        <h2>My Projects</h2>
+            <h1>
+                Building the Future,
+                <span>One Project at a Time.</span>
+            </h1>
 
-        <div class="project-card">
-            <h3>Project 01: ACEBOTT QD001 Robot Car</h3>
-
-            <p>
-                My first robotics platform. I will use this robot
-                to explore movement control, sensors, programming,
-                automation, and robotics applications.
+            <p class="hero-description">
+                Exploring robotics, programming, electronics,
+                automation and intelligent machines through
+                hands-on projects and continuous learning.
             </p>
 
-            <span class="tag">Robotics</span>
-            <span class="tag">ESP32</span>
-            <span class="tag">Electronics</span>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    Explore My Projects
+                </a>
+
+                <a href="#about" class="btn btn-outline">
+                    About Me
+                </a>
+            </div>
         </div>
+
+        <div class="hero-visual">
+            <div class="robot-symbol">🤖</div>
+            <p>LEARN • BUILD • INNOVATE</p>
+        </div>
+
     </section>
 
-    <section class="section" id="skills">
-        <h2>Skills & Technologies</h2>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about" id="about">
+
+        <div class="section-heading">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-content">
+            <div>
+                <h3>Curious Mind. Creative Builder.</h3>
+
+                <p>
+                    Welcome to my Robotics Lab! I am passionate
+                    about technology, robotics, programming and
+                    engineering.
+                </p>
+
+                <p>
+                    This portfolio documents my journey as I
+                    experiment with robotics, develop programming
+                    skills, work with electronic components and
+                    explore how intelligent machines operate.
+                </p>
+
+                <p>
+                    Every project is an opportunity to learn
+                    something new, solve problems and turn ideas
+                    into reality.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <span class="about-icon">🔬</span>
+                <h3>My Mission</h3>
+                <p>
+                    Learn by building, experiment through
+                    technology and continuously develop my
+                    engineering skills.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects" id="projects">
+
+        <div class="section-heading">
+            <p class="eyebrow">WHAT I'M BUILDING</p>
+            <h2>My Projects</h2>
+            <p>
+                A collection of my robotics experiments,
+                programming projects and engineering creations.
+            </p>
+        </div>
+
+        <div class="project-grid">
+
+            <!-- PROJECT 01 --><!-- PROJECT 01 -->
+            <article class="project-card">
+
+                <div class="project-image robot-image">
+                    <span>🤖</span>
+                    <small>PROJECT 01</small>
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">ROBOTICS</span>
+
+                    <h3>ACEBOTT QD001 Robot Car</h3>
+
+                    <p>
+                        My first robotics project! Exploring robot
+                        assembly, electronic components, ESP32
+                        programming, and robot movement.
+                    </p>
+
+                    <!-- PART 1 VIDEO -->
+                    <h4>Part 1: Building My Robot</h4>
+
+                    <div class="qd001-video">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/g4MYiLJ1SXw"
+                            title="David's First Robotics Project - Part 1"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <!-- PART 2 VIDEO -->
+                    <h4>Part 2: Robotics Demonstration</h4>
+
+                    <div class="qd001-video">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/M0pyP2SOoTc"
+                            title="David's First Robotics Project - Part 2"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <h4>About This Project</h4>
+
+                    <p>
+                        This project documents my experience building
+                        the ACEBOTT QD001 Smart Car, from identifying
+                        the materials and components to assembling
+                        the robot and demonstrating its functions.
+                    </p>
+
+                    <h4>What This Project Covers</h4>
+
+                    <ul>
+                        <li>Materials and components</li>
+                        <li>Robot assembly process</li>
+                        <li>Functional demonstration</li>
+                    </ul>
+
+                    <div class="tags">
+                        <span>ESP32</span>
+                        <span>Electronics</span>
+                        <span>Robotics</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- FUTURE PROJECT -->
+            <article class="project-card upcoming">
+
+                <div class="project-image">
+                    <span>⚡</span>
+                    <small>COMING SOON</small>
+                </div>
+
+                <div class="project-info">
+                    <span class="project-category">AUTOMATION</span>
+
+                    <h3>Future Project</h3>
+
+                    <p>
+                        New experiments and engineering
+                        projects will be documented here.
+                    </p>
+
+                    <div class="tags">
+                        <span>Learning</span>
+                        <span>Experimenting</span>
+                    </div>
+
+                    <span class="project-link">
+                        Stay tuned!
+                    </span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills" id="skills">
+
+        <div class="section-heading">
+            <p class="eyebrow">MY TECHNICAL JOURNEY</p>
+            <h2>Skills & Technologies</h2>
+
+            <p>
+                Technologies and tools I am learning and
+                exploring through practical projects.
+            </p>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-item">
+                <span>🤖</span>
+                <h3>Robotics</h3>
+                <p>Robot building and movement control</p>
+            </div>
+
+            <div class="skill-item">
+                <span>💻</span>
+                <h3>Programming</h3>
+                <p>Arduino, Python and web development</p>
+            </div>
+
+            <div class="skill-item">
+                <span>🔌</span>
+                <h3>Electronics</h3>
+                <p>Microcontrollers and electronic components</p>
+            </div>
+
+            <div class="skill-item">
+                <span>📡</span>
+                <h3>Sensors</h3>
+                <p>Sensor integration and data collection</p>
+            </div>
+
+            <div class="skill-item">
+                <span>⚙️</span>
+                <h3>Automation</h3>
+                <p>Control systems and automated processes</p>
+            </div>
+
+            <div class="skill-item">
+                <span>🧠</span>
+                <h3>Problem Solving</h3>
+                <p>Testing, troubleshooting and innovation</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact" id="contact">
+
+        <div class="section-heading">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Follow My Journey</h2>
+
+            <p>
+                Explore my projects, experiments and future
+                engineering creations.
+            </p>
+        </div>
+
+        <a
+            href="https://github.com/peraltadavidelijah-pixel"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+        >
+            Visit My GitHub
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
         <p>
-            Robotics | Programming | Electronics |
-            Sensors | Automation
+            © <span id="year"></span> My Robotics Lab.
+            Built with curiosity and creativity.
         </p>
-        <p>More technologies will be added as I learn.</p>
-    </section>
-
-    <footer>
-        <p>My Projects Portfolio | Learning Through Building</p>
     </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
